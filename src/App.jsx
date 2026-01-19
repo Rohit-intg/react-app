@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import ChildBox from "./ChildBox";
 
 function App() {
-  
-  const [message, setMessage] = useState("Hello Child");
+ 
+  const [message, setMessage] = useState("apple");
 
  
   useEffect(() => {
@@ -12,7 +12,7 @@ function App() {
 
   
   useEffect(() => {
-    console.log("Message changed to:", message);
+    console.log("Message changed to:",message );
   }, [message]);
 
   return (
@@ -23,7 +23,7 @@ function App() {
       <ChildBox title="Child 2" message={message} />
       <ChildBox title="Child 3" message={message} />
 
-      <button onClick={() => setMessage("Message Changed!")}>
+      <button onClick={() => setMessage("banana")}>
         Change Message
       </button>
     </div>
